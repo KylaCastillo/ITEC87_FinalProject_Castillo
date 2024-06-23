@@ -249,7 +249,8 @@ footer {
 @media screen and (max-width: 768px) {
 	nav {
 		text-align: center;
-		height: 250px;
+		height: 300px;
+		margin-bottom: 10px;
 	}
 
 	nav a {
@@ -258,7 +259,7 @@ footer {
 	}
 
 	nav button {
-
+		float: none;
 		margin-top: 10px;
 		grid-column: 1;
 		grid-row: 2;
