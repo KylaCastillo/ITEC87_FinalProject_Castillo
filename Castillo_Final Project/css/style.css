@@ -1,0 +1,367 @@
+/* Define the keyframes for the slide animation */
+@keyframes slideForward {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Apply the animation to the navbar items */
+#myNavbar .navbar-nav>li>a,
+#myNavbar .navbar-brand {
+    display: inline-block;
+    position: relative;
+    animation: slideForward 2s forwards;
+}
+
+.navbar-nav-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar-nav-right {
+    margin-left: auto;
+    float: right !important;
+}
+
+.navbar-nav-center,
+.navbar-nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.topbar {
+    background-color: #1b3d5c;
+    /* Bootstrap primary color */
+    color: white;
+    padding: 15px;
+    border-radius: 230px 100px;
+    font-size: 25px;
+    font-family: "Font Awesome 5 Free";
+}
+
+.topbar .top-info p {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+
+}
+
+.animated-text {
+    text-decoration: none;
+}
+
+.animated-text2 {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.animated-text2.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.navbar {
+    background-color: white;
+    border: none;
+    font-family: "Font Awesome 5 Free";
+    font-size: 20px;
+    color: #1b3d5c !important;
+    margin-top: 10px;
+}
+
+.navbar-brand {
+    color: #1b3d5c !important;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 1000;
+}
+
+p.finals {
+    color: #1b3d5c !important;
+    font-size: 90px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 900;
+}
+
+#iframe-container {
+    display: none;
+    /* Initially hide the iframe */
+    position: fixed;
+    top: 100;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 1000;
+    /* Ensure iframe appears above other content */
+    border: none;
+    /* Remove iframe border */
+}
+
+#iframe-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    /* Remove iframe border */
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.carousel {
+    align-items: center;
+    border-radius: 10%;
+    overflow: hidden;
+}
+
+.carousel .item {
+    border-radius: 10%;
+}
+
+.carousel-inner {
+    border-radius: 10%;
+}
+
+.jumbotron {
+    background: linear-gradient(rgba(248, 223, 173, 0.1), rgba(248, 223, 173, 0.1)), url(../images/bg2.jpg);
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#pageLabel {
+    color: #343a40;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-size: 25px;
+    font-family: "Font Awesome 5 Free";
+}
+
+
+#myNavbar .nav>li>a {
+    color: #495057;
+    /* Base color of the links */
+    padding: 15px 20px;
+
+}
+
+#myNavbar .nav>li>a:hover {
+    color: rgb(24, 168, 178);
+    /* Color change on hover */
+    background-color: #e9ecef;
+    /* Background color change on hover */
+    border-radius: 5px;
+    /* Rounded corners */
+    transform: scale(1.1) !important;
+    transition: 0.2s ease-in;
+}
+
+.dropdown-menu {
+    border: none;
+}
+
+.dropdown a:hover {
+    color: rgb(24, 168, 178) !important;
+}
+
+
+.thumbnail {
+    border-radius: 5%;
+    background-color: #1b3d5c;
+    height: 50%;
+}
+
+.thumbnail:hover {
+
+    transition: 0.2s ease-in;
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    border-radius: 5%;
+
+}
+
+.caption {
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    color: #343a40;
+    text-align: center;
+}
+
+#myThumbnail {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.thumbnail:hover .caption {
+    opacity: 1;
+}
+
+.jumbotron {
+    background: linear-gradient(rgba(248, 223, 173, 0.1), rgba(248, 223, 173, 0.1)), url(../images/bg2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bottombar {
+    background-color: #1b3d5c;
+    /* Bootstrap primary color */
+    color: white;
+    padding: 5px;
+    border-radius: 230px 100px;
+    font-family: "Font Awesome 5 Free";
+    margin-top: 100px;
+
+}
+
+.bottombar .bottom-info p {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+/* Media query for small screens */
+@media (max-width: 767px) {
+    #myThumbnail {
+        margin-top: 50px;
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+
+    .thumbnail:hover {
+        opacity: 1;
+        /* Show caption on hover */
+        transform: translateY(-50%);
+        /* Slide caption from bottom to top on hover */
+        color: white;
+    }
+
+    .caption {
+        bottom: -120px;
+        width: 100%;
+    }
+
+    .thumbnail:hover+.thumbnail {
+        transform: translateY(50%);
+        /* Move the next thumbnail down on hover */
+
+    }
+
+    /* Make each <li> in #viewIframe take the full width */
+    #viewIframe {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+        /* Pushes #viewIframe to the bottom */
+    }
+
+    #viewIframe li {
+        width: 100%;
+    }
+
+    #viewIframe li a {
+        display: block;
+        padding: 10px 15px;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    /* Make the .navbar-right items stack vertically */
+    .navbar-right {
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 185px;
+        /* Add margin to separate from #viewIframe */
+        margin-right: 7px;
+    }
+
+    .navbar-right li {
+        width: 100%;
+    }
+
+    .navbar-right li a {
+        display: block;
+        padding: 10px 15px;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    /* Adjust the dropdown menu */
+    .navbar-right .dropdown-menu {
+        position: static;
+        float: none;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .navbar-right .dropdown-menu li {
+        width: 100%;
+    }
+
+    .navbar-right .dropdown-menu li a {
+        text-align: center;
+    }
+
+    /* Transition for smooth height adjustment */
+    .navbar-collapse.collapse {
+        display: none !important;
+        height: 500px;
+        transition: height 0.3s ease;
+    }
+
+    .navbar-collapse.collapse.in {
+        display: block !important;
+        height: 235px;
+        overflow-x: hidden;
+    }
+
+    p.finals {
+        color: #1b3d5c !important;
+        font-size: 50px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: 900;
+    }
+
+}

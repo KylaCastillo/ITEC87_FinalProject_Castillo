@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	 <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Resturant Menu</title>
+	<link rel="stylesheet" href="Resturant_Menu.css">
+
+	
+	
+
+		
+	<body>
+	
+	 
+	<div class= "container1">
+		<nav class="tab-nav">
+		
+		<div class="tabs">
+			<div class="logo"><a href="#">RESTAURANT MENU</a> <img src="logo.jpg"> </div>
+			
+				<button><a href="#main" class="tab-link">Main Dish</a></button>
+				<button><a href="#vegetables" class="tab-link">Vegetables</a></button>
+				<button><a href="#dessert" class="tab-link">Dessert</a></button>
+				<button><a href="#drinks" class="tab-link">Drinks</a></button>
+				<button><a href="#add-ons" class="tab-link">Add-ons</a></button>
+				<button onclick="menu()">Place Order</button>
+			
+			</div>
+		</nav>	
+	</div>
+		
+	<div class="container3"
+		<div class="frontimage">
+			
+			<h1>Too tasty to be true</h1>
+			<p>Welcome to Kyla's Restaurant</p>
+		</div>
+	</div>
+	
+	<div class= "list">List of Menu </div>
+
+	<div class= "container2">
+	
+		<section id="main" class="main">
+			<h2>Main Dish</h2>
+			
+	
+				<div class="box-container">
+					<div class="box">
+						<div class="image"><img src="bulalo.jpg"></div>
+						<div class="details">
+							<div class="sub-details">
+							<h5>Bulalo</h5> 
+							<h5 class="price">Php 800.00</h5>
+							
+							
+							<label><input type="checkbox" id="bulaloCheckbox" value="800.00" name="Bulalo- 800.00" >ORDER</label> <input align="right" type="number" id="bulaloQuantity" min="0" value="0" class="textbox">
+							
+						</div>	
+						</div>
+					</div>
+					
+					<div class="box">
+						<div class="image"><img src="kare-kare.jpg"></div>
+						<div class="details">
+							<div class="sub-details">
+							<h5>Crispy Kare-kare  </h5>
+							<h5 class="price">Php 750.00</h5>
+							<label><input type="checkbox" id="kareKareCheckbox" value="750.00" name="Crispy Kare-kare- 750.00">ORDER</label> <input type="number" id="kare-kareQuantity" min="0" value="0" class="textbox">
+						</div>
+						</div>
+					</div>
+					
+					<div class="box">
+						<div class="image"><img src="Braised Corned Beef Brisket.jpg"></div>
+							<div class="details">
+							<div class="sub-details">
+							<h5>Corned Beef Brisket </h5> 
+							<h5 class="price">Php 1000.00</h5>
+							<label><input type="checkbox" id="beefCheckbox" value="1000.00" name="Braised Corned Beef Brisket- 1000.00">ORDER</label> <input type="number" id="beefQuantity" min="0" value="0" class="textbox">
+						</div>
+						</div>
+					</div>
+	
+					
+					<div class="box">
+						<div class="image"><img src="Cilantro Lime Shrimp.jpg"></div>
+						<div class="details">
+							<div class="sub-details">
+							<h5>Cilantro Lime Shrimp  </h5>
+							<h5 class="price">Php 900.00</h5>
+								<label><input type="checkbox" id="shrimpCheckbox" value="900.00" name="Cilantro Lime Shrimp- 800.00"> ORDER</label><input type="number" id="shrimpQuantity" min="0" value="0" class="textbox">
+						</div>
+						</div>
+					</div>
+					
+					<div class="box">
+						<div class="image"><img src="Lemon Garlic Chicken and Asparagus.jpg"></div>
+						<div class="details">
+							<div class="sub-details">
+							<h5>Lemon Garlic Chicken and Asparagus  </h5>
+							<h5 class="price">Php 950.00</h5>
+								<label><input type="checkbox" id="asparagusCheckbox" value="950.00" name="Lemon Garlic Chicken and Asparagus- 800.00"> ORDER</label><input type="number" id="asparagusQuantity" min="0" value="0" class="textbox">
+						</div>
+						</div>
+					</div>
+				</div>
+		</section>
+				
+ 
+		
+		
+		
+		<section  id="vegetables" class="main">
+			<h2>Vegetables</h2>
+			
+				<div class="box-container">
+					<div class="box">
+						<div class="image"><img src="buttery sauteed mushrooms with fresh herbs.jpg"></div>
+						<div class="details">
+							<div class="sub-details">
+							<h5>Sauteed Mushrooms with Herbs   </h5>
+							<h5 class="price">Php 900.00</h5>
+								<label><input type="checkbox" id="mushroomCheckbox" value="900.00" name="Sauteed Mushrooms with Fresh Herbs- 900.00">ORDER</label> <input type="number" id="mushroomQuantity" min="0" value="0" class="textbox">
+						</div>
+						</div>
+					</div>
+					
+					<div class="box">
+						<div class="image"><img src="Root Vegetable Tian.jpg"></div>
+						<div class="details">
+							<div class="sub-details">
+							<h5>Root Vegetable Tian   </h5>
+							<h5 class="price">Php 700.00</h5>
+								<label><input type="checkbox" id="tianCheckbox" value="700.00" name="Root Vegetable Tian- 700.00">ORDER</label> <input type="number" id="tianQuantity" min="0" value="0" class="textbox">
+						</div>
+						</div>
+					</div>
+				
+				<div class="box">
+						<div class="image"><img src="Kale Caesar with Fried Chickpeas.jpg"></div>
+						<div class="details">
+							<div class="sub-details">
+							<h5>Kale Caesar with Chickpeas   </h5>
+							<h5 class="price">Php 600.00</h5>
+								<label><input type="checkbox" id="kaleCheckbox" value="600.00" name="Kale Caesar with Chickpeas- 600.00">ORDER</label> <input type="number" id="kaleQuantity" min="0" value="0" class="textbox">
+						</div>
+						</div>
+					</div>
+				
+				</div>
+		</section>
+				
+		
+		
+			
+			
+			
+		
+		<section  id="dessert" class="main">
+			<h2>Dessert</h2>
+			
+			<div class="box-container">
+					<div class="box">
+						<div class="image"><img src="Carrot Cake.jpg"></div>
+						<div class="details">
+							<div class="sub-details">
+							<h5>Carrot Cake </h5>  
+							<h5 class="price">Php 180.00</h5>
+								<label><input type="checkbox" id="cakeCheckbox" value="180.00" name="Carrot Cake- 180.00">ORDER</label> <input type="number" id="cakeQuantity" min="0" value="0" class="textbox">
+						</div>
+						</div>
+					</div>
+			
+					<div class="box">
+						<div class="image"><img src="blondie with vanilla ice cream.jpg"></div>
+						<div class="details">
+							<div class="sub-details">
+							<h5>Blondie With Vanilla Ice Cream</h5>   
+							<h5 class="price">Php 220.00</h5>
+								<label><input type="checkbox" id="icecreamCheckbox" value="220.00" name="Blondie With Vanilla Ice Cream- 800.00"> ORDER</label><input type="number" id="icecreamQuantity" min="0" value="0" class="textbox">
+						</div>
+						</div>
+					</div>
+				
+					<div class="box">
+						<div class="image"><img src="Mango and coconut souffle.jpg"></div>
+						<div class="details">
+							<div class="sub-details">
+							<h5>Mango and coconut soufflé  </h5> 
+							<h5 class="price">Php 200.00</h5>
+								<label><input type="checkbox" id="mangoCheckbox" value="200.00" name="Mango and coconut souffle- 800.00">ORDER</label> <input type="number" id="mangoQuantity" min="0" value="0" class="textbox">
+						</div>
+						</div>
+					</div>
+					
+			</div >
+			
+		</section>
+		
+		<section  id="drinks" class="main">
+			<h2>Drinks</h2>
+				
+				<div class="box-container">
+					<div class="box">
+						<div class="image"><img src="French Vanilla Mille-Feuille Oatmilk Latte.jpg"></div>
+						<div class="details">
+							<div class="sub-details">
+							<h5>French Vanilla Oatmilk Latte </h5> 
+							<h5 class="price">Php 210.00</h5>
+								<label><input type="checkbox" id="frenchVanillaCheckbox" value="210.00" name="French Vanilla Mille-Feuille Oatmilk Latte- 210.00">ORDER</label> <input type="number" id="frenchVanillaQuantity" min="0" value="0" class="textbox">
+						</div>
+						</div>
+					</div>
+			
+					<div class="box">
+						<div class="image"><img src="Double Chocolate Float.jpg"></div>
+						<div class="details">
+							<div class="sub-details">
+							<h5>Double Chocolate Float  </h5>
+							<h5 class="price">Php 220.00</h5>
+								<label><input type="checkbox" id="chocofloatCheckbox" value="220.00" name="Double Chocolate Float- 220.00"> ORDER</label><input type="number" id="chocofloatQuantity" min="0" value="0" class="textbox">
+						</div>
+						</div>
+					</div>
+					
+					<div class="box">
+						<div class="image"><img src="Vanilla Sweet Cream Cold Brew.jpg"></div>
+						<div class="details">
+							<div class="sub-details">
+							<h5>Vanilla Sweet Cream Cold Brew </h5> 
+							<h5 class="price">Php 190.00</h5>
+								<label><input type="checkbox" id="brewCheckbox" value="190.00" name="	Vanilla Sweet Cream Cold Brew- 190.00"> ORDER</label><input type="number" id="brewQuantity" min="0" value="0" class="textbox">
+						</div>
+						</div>
+					</div>
+	
+				</div >
+		</section>
+		
+		<section  id="add-ons" class="main">
+			<h2>Add-ons</h2>
+			
+				<div class="box-container">
+					<div class="box">
+						<div class="image"><img src="Rice.jpg"></div>
+						<div class="details">
+							<div class="sub-details">
+							<h5>Rice  </h5>
+							<h5 class="price">Php 20.00</h5>
+								<label><input type="checkbox" id="riceCheckbox" value="20.00" name="Rice- 20.00" >ORDER</label> <input type="number" id="riceQuantity" min="0" value="0" class="textbox">
+						</div>
+						</div>
+					</div>
+			
+					<div class="box">
+						<div class="image"><img src="Fried Egg.jpg"></div>
+						<div class="details">
+							<div class="sub-details">
+							<h5>Fried Egg </h5>
+							<h5 class="price">Php 15.00</h5>
+								<label><input type="checkbox" id="eggCheckbox" value="15.00" name="Fried Egg- 150.00"> ORDER</label><input type="number" id="eggQuantity" min="0" value="0" class="textbox">
+						</div>
+						</div>
+					</div>
+				
+					<div class="box">
+						<div class="image"><img src="Softdrinks.jpg"></div>
+						<div class="details">
+							<div class="sub-details">
+							<h5>Softdrinks </h5>
+							<h5 class="price">Php 25.00</h5>
+								<label><input type="checkbox" id="softdrinksCheckbox" value="25.00" name="Softdrinks- 25.00"> ORDER</label><input type="number" id="softdrinksQuantity" min="0" value="0" class="textbox">
+						</div>
+						</div>
+					</div>
+				
+				</div>
+		</section>
+		
+	
+
+	
+	</div>
+	
+	
+		
+	
+	<script>
+	  
+		
+		function menu() {
+		var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+		var totalPrice = 0;
+		var selectedItems = [];
+		
+		if (document.getElementById('bulaloCheckbox').checked) {
+                var bulaloQuantity = parseInt(document.getElementById('bulaloQuantity').value);
+                if (bulaloQuantity > 0) {
+                    selectedItems.push("Bulalo x" + bulaloQuantity + "=" + (bulaloQuantity * 800));
+                    totalPrice += bulaloQuantity * 800;
+                }
+            }
+		
+		if (document.getElementById('kareKareCheckbox').checked) {
+                var kareKareQuantity = parseInt(document.getElementById('kare-kareQuantity').value);
+                if (kareKareQuantity > 0) {
+                    selectedItems.push("Crispy Kare-kare x" + kareKareQuantity + "=" + (kareKareQuantity * 750));
+                    totalPrice += kareKareQuantity * 750;
+                }
+            }
+			
+			
+		if (document.getElementById('beefCheckbox').checked) {
+                var beefQuantity = parseInt(document.getElementById('beefQuantity').value);
+                if (beefQuantity > 0) {
+                    selectedItems.push("Braised Corned Beef Brisket x" + beefQuantity + "=" + (beefQuantity * 1000));
+                    totalPrice += beefQuantity * 1000;
+                }
+            }
+			
+		if (document.getElementById('shrimpCheckbox').checked) {
+                var shrimpQuantity = parseInt(document.getElementById('shrimpQuantity').value);
+                if (shrimpQuantity > 0) {
+                    selectedItems.push("Cilantro Lime Shrimpt x" + shrimpQuantity + "=" + (shrimpQuantity * 900));
+                    totalPrice += shrimpQuantity * 900;
+                }
+            }
+		
+		if (document.getElementById('asparagusCheckbox').checked) {
+                var asparagusQuantity = parseInt(document.getElementById('asparagusQuantity').value);
+                if (asparagusQuantity > 0) {
+                    selectedItems.push("Lemon Garlic Chicken and Asparagus x" + asparagusQuantity + "=" + (asparagusQuantity * 800));
+                    totalPrice += asparagusQuantity * 800;
+                }
+            }			
+			
+//vegetables
+		if (document.getElementById('mushroomCheckbox').checked) {
+                var mushroomQuantity = parseInt(document.getElementById('mushroomQuantity').value);
+                if (mushroomQuantity > 0) {
+                    selectedItems.push("Sauteed Mushrooms with Fresh Herbs x" + mushroomQuantity + "=" + (mushroomQuantity * 900));
+                    totalPrice += mushroomQuantity * 900;
+                }
+            }	
+
+		if (document.getElementById('tianCheckbox').checked) {
+                var tianQuantity = parseInt(document.getElementById('tianQuantity').value);
+                if (tianQuantity > 0) {
+                    selectedItems.push("Root Vegetable Tian x" + tianQuantity + "=" + (tianQuantity * 700));
+                    totalPrice += tianQuantity * 700;
+                }
+            }			
+
+		if (document.getElementById('kaleCheckbox').checked) {
+                var kaleQuantity = parseInt(document.getElementById('kaleQuantity').value);
+                if (kaleQuantity > 0) {
+                    selectedItems.push("Kale Caesar with Fried Chickpeas x" + kaleQuantity + "=" + (kaleQuantity * 600));
+                    totalPrice += kaleQuantity * 600;
+                }
+            }
+			
+//desserts 
+
+		if (document.getElementById('cakeCheckbox').checked) {
+                var cakeQuantity = parseInt(document.getElementById('cakeQuantity').value);
+                if (cakeQuantity > 0) {
+                    selectedItems.push("Carrot Cake x" + cakeQuantity + "=" + (cakeQuantity * 180));
+                    totalPrice += cakeQuantity * 180;
+                }
+            }
+			
+		if (document.getElementById('icecreamCheckbox').checked) {
+                var icecreamQuantity = parseInt(document.getElementById('icecreamQuantity').value);
+                if (icecreamQuantity > 0) {
+                    selectedItems.push("Blondie With Vanilla Ice Cream  x" + icecreamQuantity + "=" + (icecreamQuantity * 220));
+                    totalPrice += icecreamQuantity * 180;
+                }
+            }
+			
+		if (document.getElementById('mangoCheckbox').checked) {
+                var mangoQuantity = parseInt(document.getElementById('mangoQuantity').value);
+                if (mangoQuantity > 0) {
+                    selectedItems.push("Mango and coconut souffle  x" + mangoQuantity + "=" + (mangoQuantity * 200));
+                    totalPrice += mangoQuantity * 200;
+                }
+            }
+			
+//drinks frenchVanillaCheckbox
+
+		if (document.getElementById('frenchVanillaCheckbox').checked) {
+                var frenchVanillaQuantity = parseInt(document.getElementById('frenchVanillaQuantity').value);
+                if (frenchVanillaQuantity > 0) {
+                    selectedItems.push("Mango and coconut souffle  x" + frenchVanillaQuantity + "=" + (frenchVanillaQuantity * 210));
+                    totalPrice += frenchVanillaQuantity * 200;
+                }
+            }
+
+		if (document.getElementById('chocofloatCheckbox').checked) {
+                var chocofloatQuantity = parseInt(document.getElementById('chocofloatQuantity').value);
+                if (chocofloatQuantity > 0) {
+                    selectedItems.push("Double Chocolate Float  x" + chocofloatQuantity + "=" + (chocofloatQuantity * 220));
+                    totalPrice += chocofloatQuantity * 220;
+                }
+            }
+			
+		if (document.getElementById('brewCheckbox').checked) {
+                var brewQuantity = parseInt(document.getElementById('brewQuantity').value);
+                if (brewQuantity > 0) {
+                    selectedItems.push("Double Chocolate Float  x" + brewQuantity + "=" + (brewQuantity * 190));
+                    totalPrice += brewQuantity * 190;
+                }
+            }
+			
+//add ons
+
+		if (document.getElementById('eggCheckbox').checked) {
+                var eggQuantity = parseInt(document.getElementById('eggQuantity').value);
+                if (eggQuantity > 0) {
+                    selectedItems.push("Egg  x" + eggQuantity + "=" + (eggQuantity * 15));
+                    totalPrice += eggQuantity * 15;
+                }
+            }
+
+		if (document.getElementById('riceCheckbox').checked) {
+                var riceQuantity = parseInt(document.getElementById('riceQuantity').value);
+                if (riceQuantity > 0) {
+                    selectedItems.push("Rice  x" + riceQuantity + "=" + (riceQuantity * 20));
+                    totalPrice += riceQuantity * 20;
+                }
+            }
+			
+		if (document.getElementById('softdrinksCheckbox').checked) {
+                var softdrinksQuantity = parseInt(document.getElementById('softdrinksQuantity').value);
+                if (brewQuantity > 0) {
+                    selectedItems.push("Softdrinks x" + softdrinksQuantity + "=" + (softdrinksQuantity * 25));
+                    totalPrice += softdrinksQuantity * 25;
+                }
+            }
+			
+		
+		 if (selectedItems.length > 0) {
+                alert('You have ordered:\n' + selectedItems.join('\n') + '\nTotal Price: Php' + totalPrice.toFixed(2));
+            } else {
+                alert('Please select at least one item from the menu.');
+            }
+		}
+		
+		
+
+		
+	
+	
+	</script>
+	
+	
+
+	</body>
+
+	</head>
+</html>

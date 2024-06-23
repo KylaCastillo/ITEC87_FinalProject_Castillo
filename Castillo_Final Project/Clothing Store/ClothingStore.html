@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Clothing Store</title>
+	<link rel="stylesheet" href="store.css">
+
+
+<body>
+	<header>
+		<img src="logo.jpg">
+	</header>
+
+	<nav>
+		<a href="#jeans">Jeans</a>
+		<a href="#t-shirt">T-shirt</a>
+		<a href="#perfume">Perfume</a>
+		<a href="#sando">Sando</a>
+		<a href="#toys">Toys</a>
+
+
+		<div id="messageBox" class="message-box">
+			<span id="messageText"></span>
+			<button id="closeButton" onclick="hideMessage()">Order</button>
+			<button id="cancelButton" onclick="CancelOrder()">Cancel</button>
+		</div>
+
+
+
+
+		<button class="placeOrder" onclick="clothingStore()"> <img src="place order.jpg">Place Order</button>
+		<button><a href="stock.html">View Stock</a></button>
+
+
+
+	</nav>
+
+
+
+	<section>
+		<section id="jeans" class="main">
+			<h2>JEANS</h2>
+
+
+			<div class="box-container">
+				<div class="box">
+					<div class="image"><img src="wide leg pants.jpg"></div>
+					<div class="details">
+						<div class="sub-details">
+							<h5> Wide Leg Boyfriend Jeans</h5>
+							<h5 class="price">Php 500.00</h5>
+							<h5>Stock:<span id="blackStock" value="10"> 10</span></h5>
+							<h5>Quantity:<span id="blackQuantity">0</span></h5>
+
+
+
+							<button id="addBtn" onclick="addStockCounter('blackStock', 'blackQuantity')">+</button>
+
+							<button id="subBtn"
+								onclick="minusStockCounter('blackStock', 'blackQuantity')">-</button><br><br><br><br>
+
+							<button onclick="QuantityReset()" style="height:30px; width:180px; margin-left:-130px;">
+								<img style="height:14px; width:30px; margin-right:-280px;padding-left: 40px;"
+									src="place order.jpg">
+								<input style="margin-left: 150px;" class="add" type="checkbox" id="blackCheckbox"
+									value="100.00" name="Black Pants- 500.00"> Add to Cart </button>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="image"><img src="sweatpants.jpg"></div>
+					<div class="details">
+						<div class="sub-details">
+							<h5>Oversize Sweatpants </h5>
+							<h5 class="price">Php 450.00</h5>
+							<h5>Stock:<span id="sweatpantsStock" value="10"> 10</span></h5>
+							<h5>Quantity:<span id="sweatpantsQuantity">0</span></h5>
+
+							<button id="addBtn"
+								onclick="addStockCounter('sweatpantsStock', 'sweatpantsQuantity')">+</button>
+
+							<button id="subBtn"
+								onclick="minusStockCounter('sweatpantsStock', 'sweatpantsQuantity')">-</button><br><br>
+
+							<button onclick="QuantityReset()" style="height:30px; width:180px; margin-left:-130px;">
+								<img style="height:14px; width:30px; margin-right:-280px;padding-left: 40px;"
+									src="place order.jpg">
+								<input style="margin-left: 150px;" class="add" type="checkbox" id="sweatpantsCheckbox"
+									value="100.00" name="Oversize Sweatpants- 450.00">Add to Cart</button>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="image"><img src="cargo.jpg"></div>
+					<div class="details">
+						<div class="sub-details">
+							<h5>Cargo Pants </h5>
+
+							<h5 class="price">Php 600.00</h5>
+							<h5>Stock:<span id="cargoStock" value="10"> 10</span></h5>
+							<h5>Quantity:<span id="cargoQuantity">0</span></h5>
+
+
+							<button id="addBtn" onclick="addStockCounter('cargoStock', 'cargoQuantity')">+</button>
+
+							<button id="subBtn"
+								onclick="minusStockCounter('cargoStock', 'cargoQuantity')">-</button><br><br>
+
+							<button onclick="QuantityReset()" style="height:30px; width:180px; margin-left:-130px;">
+								<img style="height:14px; width:30px; margin-right:-280px;padding-left: 40px;"
+									src="place order.jpg">
+								<input style="margin-left: 150px;" class="add" type="checkbox" id="cargoCheckbox"
+									value="600.00" name="Cargo Pants- 600.00">Add to Cart</button>
+
+						</div>
+					</div>
+				</div>
+
+
+				<div class="box">
+					<div class="image"><img src="trouser.jpg"></div>
+					<div class="details">
+						<div class="sub-details">
+							<h5>Trouser </h5>
+							<h5 class="price">Php 600.00</h5>
+
+							<h5>Stock:<span id="trouserStock" value="10"> 10</span></h5>
+							<h5>Quantity:<span id="trouserQuantity">0</span></h5>
+
+
+							<button id="addBtn" onclick="addStockCounter('trouserStock', 'trouserQuantity')">+</button>
+
+							<button id="subBtn"
+								onclick="minusStockCounter('trouserStock', 'trouserQuantity')">-</button><br><br>
+
+							<button onclick="QuantityReset()" style="height:30px; width:180px; margin-left:-130px;">
+								<img style="height:14px; width:30px; margin-right:-280px;padding-left: 40px;"
+									src="place order.jpg">
+								<input style="margin-left: 150px;" class="add" type="checkbox" id="trouserCheckbox"
+									value="650.00" name="Trouser- 650.00">Add to Cart</button>
+
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</section>
+
+	</section>
+
+
+
+	<section>
+		<section id="t-shirt" class="main">
+			<h2>T-SHIRT</h2>
+
+
+			<div class="box-container">
+				<div class="box">
+					<div class="image"><img src="tshirt1.jpg"></div>
+					<div class="details">
+						<div class="sub-details">
+							<h5>Shadow Oversized Shirt </h5>
+
+							<h5 class="price">Php 399.00</h5>
+
+							<h5>Stock:<span id="tshirt1Stock" value="10"> 10</span></h5>
+							<h5>Quantity:<span id="tshirt1Quantity">0</span></h5>
+
+
+							<button id="addBtn" onclick="addStockCounter('tshirt1Stock', 'tshirt1Quantity')">+</button>
+
+							<button id="subBtn"
+								onclick="minusStockCounter('tshirt1Stock', 'tshirt1Quantity')">-</button><br><br>
+
+							<button onclick="QuantityReset()" style="height:30px; width:180px; margin-left:-130px;">
+								<img style="height:14px; width:30px; margin-right:-280px;padding-left: 40px;"
+									src="place order.jpg">
+								<input style="margin-left: 150px;" class="add" type="checkbox" id="tshirt1Checkbox"
+									value="399.00" name="Shadow Oversized Shirt- 399.00">Add to Cart</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="image"><img src="tshirt2.jpg"></div>
+					<div class="details">
+						<div class="sub-details">
+							<h5>Vossiy Oversized Shirt </h5>
+							<h5 class="price">Php 399.00</h5>
+
+							<h5>Stock:<span id="tshirt2Stock" value="10"> 10</span></h5>
+							<h5>Quantity:<span id="tshirt2Quantity">0</span></h5>
+
+
+							<button id="addBtn" onclick="addStockCounter('tshirt2Stock', 'tshirt2Quantity')">+</button>
+
+							<button id="subBtn"
+								onclick="minusStockCounter('tshirt2Stock', 'tshirt2Quantity')">-</button><br><br>
+
+							<button onclick="QuantityReset()" style="height:30px; width:180px; margin-left:-130px;">
+								<img style="height:14px; width:30px; margin-right:-280px;padding-left: 40px;"
+									src="place order.jpg">
+								<input style="margin-left: 150px;" class="add" type="checkbox" id="tshirt2Checkbox"
+									value="399.00" name="Vossiy Oversized Shirt - 399.00"> Add to Cart</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="image"><img src="tshirt3.jpg"></div>
+					<div class="details">
+						<div class="sub-details">
+							<h5>Bear Oversized Shirt </h5>
+							<h5 class="price">Php 399.00</h5>
+
+							<h5>Stock:<span id="tshirt3Stock" value="10"> 10</span></h5>
+							<h5>Quantity:<span id="tshirt3Quantity">0</span></h5>
+
+
+							<button id="addBtn" onclick="addStockCounter('tshirt3Stock', 'tshirt3Quantity')">+</button>
+
+							<button id="subBtn"
+								onclick="minusStockCounter('tshirt3Stock', 'tshirt3Quantity')">-</button><br><br>
+
+							<button onclick="QuantityReset()" style="height:30px; width:180px; margin-left:-130px;">
+								<img style="height:14px; width:30px; margin-right:-280px;padding-left: 40px;"
+									src="place order.jpg">
+								<input style="margin-left: 150px;" class="add" type="checkbox" id="tshirt3Checkbox"
+									value="399.00" name="Bear Oversized Shirt- 399.00"> Add to Cart</button>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="box">
+					<div class="image"><img src="tshirt4.jpg"></div>
+					<div class="details">
+						<div class="sub-details">
+							<h5>Lost in Space Oversized Shirt </h5>
+							<h5 class="price">Php 399.00</h5>
+
+							<h5>Stock:<span id="tshirt4Stock" value="10"> 10</span></h5>
+							<h5>Quantity:<span id="tshirt4Quantity">0</span></h5>
+
+
+							<button id="addBtn" onclick="addStockCounter('tshirt4Stock', 'tshirt4Quantity')">+</button>
+
+							<button id="subBtn"
+								onclick="minusStockCounter('tshirt4Stock', 'tshirt4Quantity')">-</button><br><br>
+
+							<button onclick="QuantityReset()" style="height:30px; width:180px; margin-left:-130px;">
+								<img style="height:14px; width:30px; margin-right:-280px;padding-left: 40px;"
+									src="place order.jpg">
+								<input style="margin-left: 150px;" class="add" type="checkbox" id="tshirt4Checkbox"
+									value="399.00" name="Lost in Space Oversized Shirt- 399.00">Add to Cart</button>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</section>
+
+	</section>
+
+
+	<section>
+		<section id="perfume" class="main">
+			<h2>PERPUME</h2>
+
+
+			<div class="box-container">
+				<div class="box">
+					<div class="image"><img src="perfume1.jpg"></div>
+					<div class="details">
+						<div class="sub-details">
+							<h5>Miss Dior </h5>
+
+							<h5 class="price">Php 499.00</h5>
+
+							<h5>Stock:<span id="perfume1Stock" value="10"> 10</span></h5>
+							<h5>Quantity:<span id="perfume1Quantity">0</span></h5>
+
+
+							<button id="addBtn"
+								onclick="addStockCounter('perfume1Stock', 'perfume1Quantity')">+</button>
+
+							<button id="subBtn"
+								onclick="minusStockCounter('perfume1Stock', 'perfume1Quantity')">-</button><br><br>
+
+							<button onclick="QuantityReset()" style="height:30px; width:180px; margin-left:-130px;">
+								<img style="height:14px; width:30px; margin-right:-280px;padding-left: 40px;"
+									src="place order.jpg">
+								<input style="margin-left: 150px;" class="add" type="checkbox" id="perfume1Checkbox"
+									value="499.00" name="Miss Dior- 499.00"> Add to Cart </button>
+						</div>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="image"><img src="perfume2.jpg"></div>
+					<div class="details">
+						<div class="sub-details">
+							<h5>Ariana Grande </h5>
+							<h5 class="price">Php 499.00</h5>
+
+							<h5>Stock:<span id="perfume2Stock" value="10"> 10</span></h5>
+							<h5>Quantity:<span id="perfume2Quantity">0</span></h5>
+
+
+							<button id="addBtn"
+								onclick="addStockCounter('perfume2Stock', 'perfume2Quantity')">+</button>
+
+							<button id="subBtn"
+								onclick="minusStockCounter('perfume2Stock', 'perfume2Quantity')">-</button><br><br>
+
+
+							<button onclick="QuantityReset()" style="height:30px; width:180px; margin-left:-130px;">
+								<img style="height:14px; width:30px; margin-right:-280px;padding-left: 40px;"
+									src="place order.jpg">
+								<input style="margin-left: 150px;" class="add" type="checkbox" id="perfume2Checkbox"
+									value="499.00" name="Ariana Grande- 499.00"> Add to Cart</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="image"><img src="perfume3.jpg"></div>
+					<div class="details">
+						<div class="sub-details">
+							<h5>Vewarang Princess </h5>
+							<h5 class="price">Php 499.00</h5>
+
+							<h5>Stock:<span id="perfume3Stock" value="10"> 10</span></h5>
+							<h5>Quantity:<span id="perfume3Quantity">0</span></h5>
+
+
+							<button id="addBtn"
+								onclick="addStockCounter('perfume3Stock', 'perfume3Quantity')">+</button>
+
+							<button id="subBtn"
+								onclick="minusStockCounter('perfume3Stock', 'perfume3Quantity')">-</button><br><br>
+
+
+							<button onclick="QuantityReset()" style="height:30px; width:180px; margin-left:-130px;">
+								<img style="height:14px; width:30px; margin-right:-280px;padding-left: 40px;"
+									src="place order.jpg">
+								<input style="margin-left: 150px;" class="add" type="checkbox" id="perfume3Checkbox"
+									value="499.00" name="Vewarang Princess- 499.00"> Add to Cart</button>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="box">
+					<div class="image"><img src="perfume4.jpg"></div>
+					<div class="details">
+						<div class="sub-details">
+							<h5>Daisy Marc Jacobs </h5>
+							<h5 class="price">Php 499.00</h5>
+
+							<h5>Stock:<span id="perfume4Stock" value="10"> 10</span></h5>
+							<h5>Quantity:<span id="perfume4Quantity">0</span></h5>
+
+
+							<button id="addBtn"
+								onclick="addStockCounter('perfume4Stock', 'perfume4Quantity')">+</button>
+
+							<button id="subBtn"
+								onclick="minusStockCounter('perfume4Stock', 'perfume4Quantity')">-</button><br><br>
+
+							<button onclick="QuantityReset()" style="height:30px; width:180px; margin-left:-130px;">
+								<img style="height:14px; width:30px; margin-right:-280px;padding-left: 40px;"
+									src="place order.jpg">
+								<input style="margin-left: 150px;" class="add" type="checkbox" id="perfume4Checkbox"
+									value="499.00" name="Daisy Marc Jacobs- 499.00">Add to Cart</button>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</section>
+
+	</section>
+
+
+	<section>
+		<section id="sando" class="main">
+			<h2>SANDO</h2>
+
+
+			<div class="box-container">
+				<div class="box">
+					<div class="image"><img src="sando1.jpg"></div>
+					<div class="details">
+						<div class="sub-details">
+							<h5>Brown Tank Top </h5>
+
+							<h5 class="price">Php 199.00</h5>
+
+							<h5>Stock:<span id="sando1Stock" value="10"> 10</span></h5>
+							<h5>Quantity:<span id="sando1Quantity">0</span></h5>
+
+
+							<button id="addBtn" onclick="addStockCounter('sando1Stock', 'sando1Quantity')">+</button>
+
+							<button id="subBtn"
+								onclick="minusStockCounter('sando1Stock', 'sando1Quantity')">-</button><br><br>
+
+							<button onclick="QuantityReset()" style="height:30px; width:180px; margin-left:-130px;">
+								<img style="height:14px; width:30px; margin-right:-280px;padding-left: 40px;"
+									src="place order.jpg">
+								<input style="margin-left: 150px;" class="add" type="checkbox" id="sando1Checkbox"
+									value="199.00" name="Miss Dior- 199.00"> Add to Cart</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="image"><img src="sando2.jpg"></div>
+					<div class="details">
+						<div class="sub-details">
+							<h5>Beige Tank Top </h5>
+							<h5 class="price">Php 199.00</h5>
+
+							<h5>Stock:<span id="sando2Stock" value="10"> 10</span></h5>
+							<h5>Quantity:<span id="sando2Quantity">0</span></h5>
+
+
+							<button id="addBtn" onclick="addStockCounter('sando2Stock', 'sando2Quantity')">+</button>
+
+							<button id="subBtn"
+								onclick="minusStockCounter('sando2Stock', 'sando2Quantity')">-</button><br><br>
+
+							<button onclick="QuantityReset()" style="height:30px; width:180px; margin-left:-130px;">
+								<img style="height:14px; width:30px; margin-right:-280px;padding-left: 40px;"
+									src="place order.jpg">
+								<input style="margin-left: 150px;" class="add" type="checkbox" id="sando2Checkbox"
+									value="199.00" name="Ariana Grande- 199.00"> Add to Cart</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="image"><img src="sando3.jpg"></div>
+					<div class="details">
+						<div class="sub-details">
+							<h5>Gray Tank Top </h5>
+							<h5 class="price">Php 199.00</h5>
+
+							<h5>Stock:<span id="sando3Stock" value="10"> 10</span></h5>
+							<h5>Quantity:<span id="sando3Quantity">0</span></h5>
+
+
+							<button id="addBtn" onclick="addStockCounter('sando3Stock', 'sando3Quantity')">+</button>
+
+							<button id="subBtn"
+								onclick="minusStockCounter('sando3Stock', 'sando3Quantity')">-</button><br><br>
+
+							<button onclick="QuantityReset()" style="height:30px; width:180px; margin-left:-130px;">
+								<img style="height:14px; width:30px; margin-right:-280px;padding-left: 40px;"
+									src="place order.jpg">
+								<input style="margin-left: 150px;" class="add" type="checkbox" id="sando3Checkbox"
+									value="199.00" name="Vewarang Princess- 199.00"> Add to Cart</button>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="box">
+					<div class="image"><img src="sando4.jpg"></div>
+					<div class="details">
+						<div class="sub-details">
+							<h5>Black Tank Top </h5>
+							<h5 class="price">Php 199.00</h5>
+
+							<h5>Stock:<span id="sando4Stock" value="10"> 10</span></h5>
+							<h5>Quantity:<span id="sando4Quantity">0</span></h5>
+
+
+							<button id="addBtn" onclick="addStockCounter('sando4Stock', 'sando4Quantity')">+</button>
+
+							<button id="subBtn"
+								onclick="minusStockCounter('sando4Stock', 'sando4Quantity')">-</button><br><br>
+
+							<button onclick="QuantityReset()" style="height:30px; width:180px; margin-left:-130px;">
+								<img style="height:14px; width:30px; margin-right:-280px;padding-left: 40px;"
+									src="place order.jpg">
+								<input style="margin-left: 150px;" class="add" type="checkbox" id="sando4Checkbox"
+									value="199.00" name="Daisy Marc Jacobs- 199.00">Add to Cart</button>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</section>
+
+	</section>
+
+
+	<section>
+		<section id="toys" class="main">
+			<h2>TOYS</h2>
+
+
+			<div class="box-container">
+				<div class="box">
+					<div class="image"><img src="toy1.jpg"></div>
+					<div class="details">
+						<div class="sub-details">
+							<h5>Vanity Mirror </h5>
+
+							<h5 class="price">Php 500.00</h5>
+
+							<h5>Stock:<span id="toy1Stock" value="10"> 10</span></h5>
+							<h5>Quantity:<span id="toy1Quantity">0</span></h5>
+
+
+							<button id="addBtn" onclick="addStockCounter('toy1Stock', 'toy1Quantity')">+</button>
+
+							<button id="subBtn"
+								onclick="minusStockCounter('toy1Stock', 'toy1Quantity')">-</button><br><br>
+
+							<button onclick="QuantityReset()" style="height:30px; width:180px; margin-left:-130px;">
+								<img style="height:14px; width:30px; margin-right:-280px;padding-left: 40px;"
+									src="place order.jpg">
+								<input style="margin-left: 150px;" class="add" type="checkbox" id="toy1Checkbox"
+									value="500.00" name="Vanity Mirror- 500.00"> Add to Cart</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="image"><img src="toy2.jpg"></div>
+					<div class="details">
+						<div class="sub-details">
+							<h5>Mercedes Toy Car</h5>
+							<h5 class="price">Php 500.00</h5>
+
+							<h5>Stock:<span id="toy2Stock" value="10"> 10</span></h5>
+							<h5>Quantity:<span id="toy2Quantity">0</span></h5>
+
+
+							<button id="addBtn" onclick="addStockCounter('toy2Stock', 'toy2Quantity')">+</button>
+
+							<button id="subBtn"
+								onclick="minusStockCounter('toy2Stock', 'toy2Quantity')">-</button><br><br>
+
+							<button onclick="QuantityReset()" style="height:30px; width:180px; margin-left:-130px;">
+								<img style="height:14px; width:30px; margin-right:-280px;padding-left: 40px;"
+									src="place order.jpg">
+								<input style="margin-left: 150px;" class="add" type="checkbox" id="toy2Checkbox"
+									value="500.00" name="Mercedes Toy Car- 500.00">Add to Cart</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="image"><img src="toy3.jpg"></div>
+					<div class="details">
+						<div class="sub-details">
+							<h5>Mickey Mouse Drum Set </h5>
+							<h5 class="price">Php 500.00</h5>
+
+							<h5>Stock:<span id="toy3Stock" value="10"> 10</span></h5>
+							<h5>Quantity:<span id="toy3Quantity">0</span></h5>
+
+
+							<button id="addBtn" onclick="addStockCounter('toy3Stock', 'toy3Quantity')">+</button>
+
+							<button id="subBtn"
+								onclick="minusStockCounter('toy3Stock', 'toy3Quantity')">-</button><br><br>
+
+							<button onclick="QuantityReset()" style="height:30px; width:180px; margin-left:-130px;">
+								<img style="height:14px; width:30px; margin-right:-280px;padding-left: 40px;"
+									src="place order.jpg">
+								<input style="margin-left: 150px;" class="add" type="checkbox" id="toy3Checkbox"
+									value="500.00" name="Mickey Mouse Drum Set  - 500.00"> Add to Cart</button>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="box">
+					<div class="image"><img src="toy4.jpg"></div>
+					<div class="details">
+						<div class="sub-details">
+							<h5>Popit Unicorn </h5>
+							<h5 class="price">Php 500.00</h5>
+
+							<h5>Stock:<span id="toy4Stock" value="10"> 10</span></h5>
+							<h5>Quantity:<span id="toy4Quantity">0</span></h5>
+
+
+							<button id="addBtn" onclick="addStockCounter('toy4Stock', 'toy4Quantity')">+</button>
+
+							<button id="subBtn"
+								onclick="minusStockCounter('toy4Stock', 'toy4Quantity')">-</button><br><br>
+
+							<button onclick="QuantityReset()" style="height:30px; width:180px; margin-left:-130px;">
+								<img style="height:14px; width:30px; margin-right:-280px;padding-left: 40px;"
+									src="place order.jpg">
+								<input style="margin-left: 150px;" class="add" type="checkbox" id="toy4Checkbox"
+									value="500.00" name="Popit Unicorn- 500.00">Add to Cart</button>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</section>
+
+	</section>
+
+	<footer>
+		<p>&copy; 2024 Clothing Store ApparelCo. All rights reserved.</p>
+		<p> Kyla Castillo.</p>
+		<p>BSIT 3-1</p>
+
+	</footer>
+	<script>
+
+		var storedBlackStock = localStorage.getItem('blackStock1');
+		if (storedBlackStock !== null) {
+			document.getElementById('blackStock').textContent = storedBlackStock;
+		}
+
+		var storedBlackStock = localStorage.getItem('sweatpantsStock1');
+		if (storedBlackStock !== null) {
+			document.getElementById('sweatpantsStock').textContent = storedBlackStock;
+		}
+
+		var storedBlackStock = localStorage.getItem('cargoStock1');
+		if (storedBlackStock !== null) {
+			document.getElementById('cargoStock').textContent = storedBlackStock;
+		}
+
+		var storedBlackStock = localStorage.getItem('trouserStock1');
+		if (storedBlackStock !== null) {
+			document.getElementById('trouserStock').textContent = storedBlackStock;
+		}
+
+
+		var storedBlackStock = localStorage.getItem('tshirt1Stock1');
+		if (storedBlackStock !== null) {
+			document.getElementById('tshirt1Stock').textContent = storedBlackStock;
+		}
+
+		var storedBlackStock = localStorage.getItem('tshirt2Stock1');
+		if (storedBlackStock !== null) {
+			document.getElementById('tshirt2Stock').textContent = storedBlackStock;
+		}
+
+		var storedBlackStock = localStorage.getItem('tshirt3Stock1');
+		if (storedBlackStock !== null) {
+			document.getElementById('tshirt3Stock').textContent = storedBlackStock;
+		}
+
+		var storedBlackStock = localStorage.getItem('tshirt4Stock1');
+		if (storedBlackStock !== null) {
+			document.getElementById('tshirt4Stock').textContent = storedBlackStock;
+		}
+
+
+		var storedBlackStock = localStorage.getItem('perfume1Stock1');
+		if (storedBlackStock !== null) {
+			document.getElementById('perfume1Stock').textContent = storedBlackStock;
+		}
+
+		var storedBlackStock = localStorage.getItem('perfume1Stock1');
+		if (storedBlackStock !== null) {
+			document.getElementById('perfume2Stock').textContent = storedBlackStock;
+		}
+
+		var storedBlackStock = localStorage.getItem('perfume3Stock1');
+		if (storedBlackStock !== null) {
+			document.getElementById('perfume3Stock').textContent = storedBlackStock;
+		}
+
+		var storedBlackStock = localStorage.getItem('perfume4Stock1');
+		if (storedBlackStock !== null) {
+			document.getElementById('perfume4Stock').textContent = storedBlackStock;
+		}
+
+		var storedBlackStock = localStorage.getItem('sando1Stock1');
+		if (storedBlackStock !== null) {
+			document.getElementById('sando1Stock').textContent = storedBlackStock;
+		}
+
+		var storedBlackStock = localStorage.getItem('sando2Stock1');
+		if (storedBlackStock !== null) {
+			document.getElementById('sando2Stock').textContent = storedBlackStock;
+		}
+
+		var storedBlackStock = localStorage.getItem('sando3Stock1');
+		if (storedBlackStock !== null) {
+			document.getElementById('sando3Stock').textContent = storedBlackStock;
+		}
+
+		var storedBlackStock = localStorage.getItem('sando4Stock1');
+		if (storedBlackStock !== null) {
+			document.getElementById('sando4Stock').textContent = storedBlackStock;
+		}
+
+		var storedBlackStock = localStorage.getItem('toy1Stock1');
+		if (storedBlackStock !== null) {
+			document.getElementById('toy1Stock').textContent = storedBlackStock;
+		}
+
+		var storedBlackStock = localStorage.getItem('toy2Stock1');
+		if (storedBlackStock !== null) {
+			document.getElementById('toy2Stock').textContent = storedBlackStock;
+		}
+
+		var storedBlackStock = localStorage.getItem('toy3Stock1');
+		if (storedBlackStock !== null) {
+			document.getElementById('toy3Stock').textContent = storedBlackStock;
+		}
+
+		var storedBlackStock = localStorage.getItem('toy4Stock1');
+		if (storedBlackStock !== null) {
+			document.getElementById('toy4Stock').textContent = storedBlackStock;
+		}
+
+
+		function clothingStore() {
+			var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+			var totalPrice = 0;
+			var selectedItems = [];
+			var finalStock = 0;
+			var messageBox = document.getElementById('messageBox');
+			var messageText = document.getElementById('messageText');
+
+			// Check some condition before showing the message box
+			var condition = true;
+
+			//jeans
+			if (document.getElementById('blackCheckbox').checked) {
+				var blackQuantity = parseInt(document.getElementById('blackQuantity').textContent);
+				var blackStock = parseInt(document.getElementById('blackStock').textContent);
+				if (blackQuantity > 0) {
+					selectedItems.push("Wide Leg Boyfriend Jeans x" + blackQuantity + "=" + (blackQuantity * 500));
+					totalPrice += blackQuantity * 500;
+
+				}
+
+				document.getElementById("blackQuantity").textContent = 0;
+				document.getElementById('blackCheckbox').checked = false;
+				document.getElementById('blackStock').textContent = blackStock;
+
+			}
+			if (document.getElementById('sweatpantsCheckbox').checked) {
+				var sweatpantsQuantity = parseInt(document.getElementById('sweatpantsQuantity').textContent);
+				var sweatpantsStock = parseInt(document.getElementById('sweatpantsStock').textContent);
+				if (sweatpantsQuantity > 0) {
+					selectedItems.push("Oversize Sweatpants  x" + sweatpantsQuantity + "=" + (sweatpantsQuantity * 450));
+					totalPrice += sweatpantsQuantity * 450;
+
+				}
+
+				document.getElementById("sweatpantsQuantity").textContent = 0;
+				document.getElementById('sweatpantsCheckbox').checked = false;
+				productCounter = 0;
+
+
+			}
+
+			if (document.getElementById('cargoCheckbox').checked) {
+				var cargoQuantity = parseInt(document.getElementById('cargoQuantity').textContent);
+				var cargoStock = parseInt(document.getElementById('cargoStock').textContent);
+				if (cargoQuantity > 0) {
+					selectedItems.push("Cargo Pants x" + cargoQuantity + "=" + (cargoQuantity * 600));
+					totalPrice += cargoQuantity * 600;
+				}
+
+				document.getElementById("cargoQuantity").textContent = 0;
+				document.getElementById('cargoCheckbox').checked = false;
+				productCounter = 0;
+
+			}
+
+
+			if (document.getElementById('trouserCheckbox').checked) {
+				var trouserQuantity = parseInt(document.getElementById('trouserQuantity').textContent);
+				var trouserStock = parseInt(document.getElementById('trouserStock').textContent);
+				if (trouserQuantity > 0) {
+					selectedItems.push("Trouser x" + trouserQuantity + "=" + (trouserQuantity * 450));
+					totalPrice += trouserQuantity * 450;
+				}
+
+				document.getElementById("trouserQuantity").textContent = 0;
+				document.getElementById('trouserCheckbox').checked = false;
+				productCounter = 0;
+
+			}
+
+			//tshirt
+
+			if (document.getElementById('tshirt1Checkbox').checked) {
+				var tshirt1Quantity = parseInt(document.getElementById('tshirt1Quantity').textContent);
+				var tshirt1Stock = parseInt(document.getElementById('tshirt1Stock').textContent);
+				if (tshirt1Quantity > 0) {
+					selectedItems.push("Shadow Oversized Shirts x" + tshirt1Quantity + "=" + (tshirt1Quantity * 399));
+					totalPrice += tshirt1Quantity * 399;
+				}
+
+				document.getElementById("tshirt1Quantity").textContent = 0;
+				document.getElementById('tshirt1Checkbox').checked = false;
+				productCounter = 0;
+
+			}
+
+			if (document.getElementById('tshirt2Checkbox').checked) {
+				var tshirt2Quantity = parseInt(document.getElementById('tshirt2Quantity').textContent);
+				var tshirt2Stock = parseInt(document.getElementById('tshirt2Stock').textContent);
+
+				if (tshirt2Quantity > 0) {
+					selectedItems.push("Vossiy Oversized Shirt x" + tshirt2Quantity + "=" + (tshirt2Quantity * 399));
+					totalPrice += tshirt2Quantity * 399;
+				}
+
+				document.getElementById("tshirt2Quantity").textContent = 0;
+				document.getElementById('tshirt2Checkbox').checked = false;
+				productCounter = 0;
+
+			}
+
+			if (document.getElementById('tshirt3Checkbox').checked) {
+				var tshirt3Quantity = parseInt(document.getElementById('tshirt3Quantity').textContent);
+				var tshirt3Stock = parseInt(document.getElementById('tshirt3Stock').textContent);
+				if (tshirt3Quantity > 0) {
+					selectedItems.push("Bear Oversized Shirt x" + tshirt3Quantity + "=" + (tshirt3Quantity * 399));
+					totalPrice += tshirt3Quantity * 399;
+				}
+
+				document.getElementById("tshirt3Quantity").textContent = 0;
+				document.getElementById('tshirt3Checkbox').checked = false;
+				productCounter = 0;
+
+			}
+
+
+			if (document.getElementById('tshirt4Checkbox').checked) {
+				var tshirt4Quantity = parseInt(document.getElementById('tshirt4Quantity').textContent);
+				var tshirt4Stock = parseInt(document.getElementById('tshirt4Stock').textContent);
+				if (tshirt4Quantity > 0) {
+					selectedItems.push("Lost in Space Oversized Shirts x" + tshirt4Quantity + "=" + (tshirt4Quantity * 399));
+					totalPrice += tshirt4Quantity * 399;
+				}
+
+				document.getElementById("tshirt4Quantity").textContent = 0;
+				document.getElementById('tshirt4Checkbox').checked = false;
+				productCounter = 0;
+
+			}
+
+			//perfume
+
+			if (document.getElementById('perfume1Checkbox').checked) {
+				var perfume1Quantity = parseInt(document.getElementById('perfume1Quantity').textContent);
+				var perfume1Stock = parseInt(document.getElementById('perfume1Stock').textContent);
+				if (perfume1Quantity > 0) {
+					selectedItems.push("Miss Dior x" + perfume1Quantity + "=" + (perfume1Quantity * 499));
+					totalPrice += perfume1Quantity * 499;
+				}
+
+				document.getElementById("perfume1Quantity").textContent = 0;
+				document.getElementById('perfume1Checkbox').checked = false;
+				productCounter = 0;
+			}
+
+			if (document.getElementById('perfume2Checkbox').checked) {
+				var perfume2Quantity = parseInt(document.getElementById('perfume2Quantity').textContent);
+				var perfume2Stock = parseInt(document.getElementById('perfume2Stock').textContent);
+				if (perfume2Quantity > 0) {
+					selectedItems.push("Ariana Grande x" + perfume2Quantity + "=" + (perfume2Quantity * 499));
+					totalPrice += perfume2Quantity * 499;
+				}
+
+				document.getElementById("perfume2Quantity").textContent = 0;
+				document.getElementById('perfume2Checkbox').checked = false;
+				productCounter = 0;
+			}
+
+
+
+			if (document.getElementById('perfume3Checkbox').checked) {
+				var perfume3Quantity = parseInt(document.getElementById('perfume3Quantity').textContent);
+				var perfume3Stock = parseInt(document.getElementById('perfume3Stock').textContent);
+				if (perfume3Quantity > 0) {
+					selectedItems.push("Vewarang Princess x" + perfume3Quantity + "=" + (perfume3Quantity * 499));
+					totalPrice += perfume3Quantity * 499;
+				}
+
+				document.getElementById("perfume3Quantity").textContent = 0;
+				document.getElementById('perfume3Checkbox').checked = false;
+				productCounter = 0;
+			}
+
+
+			if (document.getElementById('perfume4Checkbox').checked) {
+				var perfume4Quantity = parseInt(document.getElementById('perfume4Quantity').textContent);
+				var perfume4Stock = parseInt(document.getElementById('perfume4Stock').textContent);
+				if (perfume4Quantity > 0) {
+					selectedItems.push("Daisy Marc Jacobs x" + perfume4Quantity + "=" + (perfume4Quantity * 499));
+					totalPrice += perfume4Quantity * 499;
+				}
+
+				document.getElementById("perfume4Quantity").textContent = 0;
+				document.getElementById('perfume4Checkbox').checked = false;
+				productCounter = 0;
+			}
+
+			//sando
+
+			if (document.getElementById('sando1Checkbox').checked) {
+				var sando1Quantity = parseInt(document.getElementById('sando1Quantity').textContent);
+				var sando1Stock = parseInt(document.getElementById('sando1Stock').textContent);
+				if (sando1Quantity > 0) {
+					selectedItems.push("Brown Tank Top x" + sando1Quantity + "=" + (sando1Quantity * 199));
+					totalPrice += sando1Quantity * 199;
+				}
+
+				document.getElementById("sando1Quantity").textContent = 0;
+				document.getElementById('sando1Checkbox').checked = false;
+				productCounter = 0;
+			}
+
+			if (document.getElementById('sando2Checkbox').checked) {
+				var sando2Quantity = parseInt(document.getElementById('sando2Quantity').textContent);
+				var sando2Stock = parseInt(document.getElementById('sando2Stock').textContent);
+				if (sando2Quantity > 0) {
+					selectedItems.push("Beige Tank Top x" + sando2Quantity + "=" + (sando2Quantity * 199));
+					totalPrice += sando2Quantity * 199;
+				}
+
+				document.getElementById("sando2Quantity").textContent = 0;
+				document.getElementById('sando2Checkbox').checked = false;
+				productCounter = 0;
+			}
+
+			if (document.getElementById('sando3Checkbox').checked) {
+				var sando3Quantity = parseInt(document.getElementById('sando3Quantity').textContent);
+				var sando3Stock = parseInt(document.getElementById('sando3Stock').textContent);
+				if (sando3Quantity > 0) {
+					selectedItems.push("Gray Tank Top x" + sando3Quantity + "=" + (sando3Quantity * 199));
+					totalPrice += sando3Quantity * 199;
+				}
+
+				document.getElementById("sando3Quantity").textContent = 0;
+				document.getElementById('sando3Checkbox').checked = false;
+				productCounter = 0;
+			}
+
+			if (document.getElementById('sando4Checkbox').checked) {
+				var sando4Quantity = parseInt(document.getElementById('sando4Quantity').textContent);
+				var sando4Stock = parseInt(document.getElementById('sando4Stock').textContent);
+				if (sando4Quantity > 0) {
+					selectedItems.push("Black Tank Top x" + sando4Quantity + "=" + (sando4Quantity * 199));
+					totalPrice += sando4Quantity * 199;
+				}
+
+				document.getElementById("sando4Quantity").textContent = 0;
+				document.getElementById('sando4Checkbox').checked = false;
+				productCounter = 0;
+			}
+
+			//toys
+
+			if (document.getElementById('toy1Checkbox').checked) {
+				var toy1Quantity = parseInt(document.getElementById('toy1Quantity').textContent);
+				var toy1Stock = parseInt(document.getElementById('toy1Stock').textContent);
+				if (toy1Quantity > 0) {
+					selectedItems.push("Vanity Mirror x" + toy1Quantity + "=" + (toy1Quantity * 500));
+					totalPrice += toy1Quantity * 500;
+				}
+
+				document.getElementById("toy1Quantity").textContent = 0;
+				document.getElementById('toy1Checkbox').checked = false;
+				productCounter = 0;
+			}
+
+			if (document.getElementById('toy2Checkbox').checked) {
+				var toy2Quantity = parseInt(document.getElementById('toy2Quantity').textContent);
+				var toy2Stock = parseInt(document.getElementById('toy2Stock').textContent);
+				if (toy2Quantity > 0) {
+					selectedItems.push("Mercedes Toy Car x" + toy2Quantity + "=" + (toy2Quantity * 500));
+					totalPrice += toy2Quantity * 500;
+				}
+
+				document.getElementById("toy2Quantity").textContent = 0;
+				document.getElementById('toy2Checkbox').checked = false;
+				productCounter = 0;
+			}
+
+			if (document.getElementById('toy3Checkbox').checked) {
+				var toy3Quantity = parseInt(document.getElementById('toy3Quantity').textContent);
+				var toy3Stock = parseInt(document.getElementById('toy3Stock').textContent);
+				if (toy3Quantity > 0) {
+					selectedItems.push("Mickey Mouse Drum Set x" + toy3Quantity + "=" + (toy3Quantity * 500));
+					totalPrice += toy3Quantity * 500;
+				}
+
+				document.getElementById("toy3Quantity").textContent = 0;
+				document.getElementById('toy3Checkbox').checked = false;
+				productCounter = 0;
+			}
+
+			if (document.getElementById('toy4Checkbox').checked) {
+				var toy4Quantity = parseInt(document.getElementById('toy4Quantity').textContent);
+				var toy4Stock = parseInt(document.getElementById('toy4Stock').textContent);
+				if (toy4Quantity > 0) {
+					selectedItems.push("Unicorn Popit x" + toy4Quantity + "=" + (toy4Quantity * 500));
+					totalPrice += toy4Quantity * 500;
+				}
+
+				document.getElementById("toy4Quantity").textContent = 0;
+				document.getElementById('toy4Checkbox').checked = false;
+				productCounter = 0;
+			}
+			localStorage.setItem("totalPrice", totalPrice);
+			// Additional product checks and calculations ...
+
+			if (selectedItems.length > 0) {
+				var discountSelector = '<form id="discountForm">';
+				discountSelector += '<input type="radio" id="senior" name="discountType" value="senior">';
+				discountSelector += '<label for="senior">Senior (20% discount)</label><br>';
+				discountSelector += '<input type="radio" id="pwd" name="discountType" value="pwd">';
+				discountSelector += '<label for="pwd">PWD (30% discount)</label><br>';
+				discountSelector += '<input type="radio" id="student" name="discountType" value="student">';
+				discountSelector += '<label for="student">Student (10% discount)</label><br>';
+				discountSelector += '</form>';
+
+
+				var message = 'You have ordered:<br><br>';
+				selectedItems.forEach(function (item) {
+					message += item + '<br>';
+				});
+				message += '<br>Total Price: Php ' + totalPrice.toFixed(2) + '<br>';
+				message += '<br>Select Discount Type: ' + discountSelector;
+
+
+				document.getElementById('messageBox').style.display = 'block';
+				document.getElementById('messageText').innerHTML = message;
+
+
+				var discountForm = document.getElementById('discountForm');
+				discountForm.addEventListener('change', applyDiscount);
+			} else {
+				alert('Please select at least one item from the menu.');
+			}
+		}
+
+
+
+		function applyDiscount() {
+			var selectedDiscount = document.querySelector('input[name="discountType"]:checked').value;
+			var discountPercentage = 0;
+			var discount = 0;
+			var totalPr = localStorage.getItem("totalPrice");
+
+
+			if (selectedDiscount === "senior") {
+				discountPercentage = 0.2;
+				discount = totalPr * discountPercentage;
+				var discountedPrice = totalPr - discount;
+
+				localStorage.setItem("discountedPrice", discountedPrice);
+
+				var message = 'Discount:<br><br>';
+				message += '<br>Total Price: Php ' + totalPr + '<br>';
+				message += '<br>Total Discount: Php ' + discount + '<br>';
+				message += '<br>Discounted Price: Php ' + discountedPrice + '<br>';
+				message += '<br>Pay Amount: Php ' + '<input type="text" id="payAmount" value="">' + '<br>';
+
+				document.getElementById('messageBox').style.display = 'block';
+				document.getElementById('messageText').innerHTML = message;
+
+
+			}
+
+			if (selectedDiscount === "pwd") {
+				discountPercentage = 0.1;
+				discount = totalPr * discountPercentage;
+				var discountedPrice = totalPr - discount;
+
+				localStorage.setItem("discountedPrice", discountedPrice);
+
+				var message = 'Discount:<br><br>';
+				message += '<br>Total Price: Php ' + totalPr + '<br>';
+				message += '<br>Total Discount: Php ' + discount + '<br>';
+				message += '<br>Discounted Price: Php ' + discountedPrice + '<br>';
+				message += '<br>Pay Amount: Php ' + '<input type="text" id="payAmount" value="">' + '<br>';
+
+				document.getElementById('messageBox').style.display = 'block';
+				document.getElementById('messageText').innerHTML = message;
+			}
+
+			if (selectedDiscount === "student") {
+				discountPercentage = 0.1;
+				discount = totalPr * discountPercentage;
+				var discountedPrice = totalPr - discount;
+
+				localStorage.setItem("discountedPrice", discountedPrice);
+
+				var message = 'Discount:<br><br>';
+				message += '<br>Total Price: Php ' + totalPr + '<br>';
+				message += '<br>Total Discount: Php ' + discount + '<br>';
+				message += '<br>Discounted Price: Php ' + discountedPrice + '<br>';
+				message += '<br>Pay Amount: Php ' + '<input type="text" id="payAmount" value="">' + '<br>';
+
+				document.getElementById('messageBox').style.display = 'block';
+				document.getElementById('messageText').innerHTML = message;
+			}
+
+
+		}
+
+		function hideMessage() {
+			var payAmount = document.getElementById('payAmount').value;
+			var dp = localStorage.getItem("discountedPrice");
+			var messageBox = document.getElementById('messageBox');
+			var changeAmount = payAmount - dp;
+			if (payAmount < dp) {
+				messageBox.style.display = 'none';
+				alert("Payment amount is not enough.");
+			} else {
+				messageBox.style.display = 'none';
+
+				alert("Your change amount is Php " + changeAmount + "\n\nOrder Complete! Thank you for choosing ApparelCo!");
+			}
+			localStorage.clear();
+
+		}
+
+		let productCounter = 0;
+		let productFinalStock = 0;
+
+		function addStockCounter(stockId, quantityId) {
+			var prodStock = parseInt(document.getElementById(stockId).textContent);
+
+
+			if (prodStock != 0) {
+
+				productCounter++;
+
+				productFinalStock = prodStock - 1;
+
+				document.getElementById(stockId).textContent = productFinalStock.toString();
+				document.getElementById(quantityId).innerText = productCounter;
+
+			}
+
+
+		}
+
+		function minusStockCounter(stockId, quantityId) {
+
+			if (productCounter > 0) {
+				productCounter--;
+
+				var prodStock = parseInt(document.getElementById(stockId).textContent);
+				productFinalStock = prodStock + 1;
+
+				document.getElementById(quantityId).innerText = productCounter;
+				document.getElementById(stockId).textContent = productFinalStock.toString();
+			}
+
+			else {
+			}
+		}
+		function viewStock() {
+			window.open("stock.html", "_blank", "width=800,height=600");
+		}
+
+		function QuantityReset() {
+			productCounter = 0;
+
+		}
+
+		function CancelOrder() {
+			location.reload();
+		}
+
+
+		document.addEventListener('DOMContentLoaded', function () {
+			const buttons = document.querySelectorAll('.sub-details button');
+
+			buttons.forEach(button => {
+				button.addEventListener('click', function () {
+
+					const currentColor = button.style.backgroundColor;
+
+
+					if (currentColor === 'gray') {
+
+						button.style.backgroundColor = '';
+						button.style.color = '';
+					} else {
+
+						button.style.backgroundColor = 'gray';
+						button.style.color = 'white';
+					}
+				});
+			});
+
+
+		});
+
+
+
+
+	</script>
+
+</body>
+
+</head>
+
+</html>

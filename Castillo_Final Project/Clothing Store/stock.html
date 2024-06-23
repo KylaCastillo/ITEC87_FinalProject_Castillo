@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Clothing Store</title>
+	<link rel="stylesheet" href="store.css">
+
+
+<body>
+	<header>
+		<img src="logo.jpg">
+	</header>
+
+	<nav>
+		<h2>STOCKS</h2>
+		<a href="#jeans">Jeans</a>
+		<a href="#t-shirt">T-shirt</a>
+		<a href="#perfume">Perfume</a>
+		<a href="#sando">Sando</a>
+		<a href="#toys">Toys</a>
+
+
+		<button><a href="ClothingStore.html">Back to Main Page</a></button>
+	</nav>
+
+
+	<section>
+		<section id="jeans" class="main">
+			<h2>JEANS</h2>
+
+
+			<div class="box-container">
+				<div class="box">
+					<div class="image"><img src="wide leg pants.jpg"></div>
+					<div class="details">
+						<div class="sub-details">
+							<h5> Wide Leg Boyfriend Jeans</h5>
+
+							<h5>Stock:<span id="blackStock" value="10"> 10</span></h5>
+
+
+							<button id="bt1" onclick="addStock('blackStock1')">Add Stock:</button><span><input
+									style="width:70px;" type="input" id="blackStock1" name="stock"></span></h5>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="image"><img src="sweatpants.jpg"></div>
+					<div class="details">
+						<div class="sub-details">
+							<h5>Oversize Sweatpants </h5>
+							<h5>Stock:<span id="sweatpantsStock" value="10"> 10</span></h5>
+
+
+							<button id="bt1" onclick="addStock('sweatpantsStock1')">Add Stock:</button><span><input
+									style="width:70px;" type="input" id="sweatpantsStock1" name="stock"></span></h5>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="image"><img src="cargo.jpg"></div>
+					<div class="details">
+						<div class="sub-details">
+							<h5>Cargo Pants </h5>
+
+							<h5>Stock:<span id="cargoStock" value="10"> 10</span></h5>
+
+							<button id="bt1" onclick="addStock('cargoStock1')">Add Stock:</button><span><input
+									style="width:70px;" type="input" id="cargoStock1" name="stock"></span></h5>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="box">
+					<div class="image"><img src="trouser.jpg"></div>
+					<div class="details">
+						<div class="sub-details">
+							<h5>Trouser </h5>
+
+							<h5>Stock:<span id="trouserStock" value="10"> 10</span></h5>
+
+							<button id="bt1" onclick="addStock('trouserStock1')">Add Stock:</button><span><input
+									style="width:70px;" type="input" id="trouserStock1" name="stock"></span></h5>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</section>
+
+	</section>
+
+
+
+	<section>
+		<section id="t-shirt" class="main">
+			<h2>T-SHIRT</h2>
+
+
+			<div class="box-container">
+				<div class="box">
+					<div class="image"><img src="tshirt1.jpg"></div>
+					<div class="details">
+						<div class="sub-details">
+							<h5>Shadow Oversized Shirt </h5>
+
+							<h5>Stock:<span id="tshirt1Stock" value="10"> 10</span></h5>
+							<button id="bt1" onclick="addStock('tshirt1Stock1')">Add Stock:</button><span><input
+									style="width:70px;" type="input" id="tshirt1Stock1" name="stock"></span></h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="image"><img src="tshirt2.jpg"></div>
+					<div class="details">
+						<div class="sub-details">
+							<h5>Vossiy Oversized Shirt </h5>
+
+							<h5>Stock:<span id="tshirt2Stock" value="10"> 10</span></h5>
+							<button id="bt1" onclick="addStock('tshirt2Stock1')">Add Stock:</button><span><input
+									style="width:70px;" type="input" id="tshirt2Stock1" name="stock"></span></h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="image"><img src="tshirt3.jpg"></div>
+					<div class="details">
+						<div class="sub-details">
+							<h5>Bear Oversized Shirt </h5>
+
+
+							<h5>Stock:<span id="tshirt3Stock" value="10"> 10</span></h5>
+							<button id="bt1" onclick="addStock('tshirt3Stock1')">Add Stock:</button><span><input
+									style="width:70px;" type="input" id="tshirt3Stock1" name="stock"></span></h5>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="box">
+					<div class="image"><img src="tshirt4.jpg"></div>
+					<div class="details">
+						<div class="sub-details">
+							<h5>Lost in Space Oversized Shirt </h5>
+
+							<h5>Stock:<span id="tshirt4Stock" value="10"> 10</span></h5>
+							<button id="bt1" onclick="addStock('tshirt4Stock1')">Add Stock:</button><span><input
+									style="width:70px;" type="input" id="tshirt4Stock1" name="stock"></span></h5>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</section>
+
+	</section>
+
+
+	<section>
+		<section id="perfume" class="main">
+			<h2>PERPUME</h2>
+
+
+			<div class="box-container">
+				<div class="box">
+					<div class="image"><img src="perfume1.jpg"></div>
+					<div class="details">
+						<div class="sub-details">
+							<h5>Miss Dior </h5>
+
+							<h5>Stock:<span id="perfume1Stock" value="10"> 10</span></h5>
+							<button id="bt1" onclick="addStock('perfume1Stock1')">Add Stock:</button><span><input
+									style="width:70px;" type="input" id="perfume1Stock1" name="stock"></span></h5>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="image"><img src="perfume2.jpg"></div>
+					<div class="details">
+						<div class="sub-details">
+							<h5>Ariana Grande </h5>
+
+							<h5>Stock:<span id="perfume2Stock" value="10"> 10</span></h5>
+							<button id="bt1" onclick="addStock('perfume2Stock1')">Add Stock:</button><span><input
+									style="width:70px;" type="input" id="perfume2Stock1" name="stock"></span></h5>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="image"><img src="perfume3.jpg"></div>
+					<div class="details">
+						<div class="sub-details">
+							<h5>Vewarang Princess </h5>
+
+							<h5>Stock:<span id="perfume3Stock" value="10"> 10</span></h5>
+							<button id="bt1" onclick="addStock('perfume3Stock1')">Add Stock:</button><span><input
+									style="width:70px;" type="input" id="perfume3Stock1" name="stock"></span></h5>
+
+						</div>
+					</div>
+				</div>
+
+
+				<div class="box">
+					<div class="image"><img src="perfume4.jpg"></div>
+					<div class="details">
+						<div class="sub-details">
+							<h5>Daisy Marc Jacobs </h5>
+
+							<h5>Stock:<span id="perfume4Stock" value="10"> 10</span></h5>
+							<button id="bt1" onclick="addStock('perfume4Stock1')">Add Stock:</button><span><input
+									style="width:70px;" type="input" id="perfume4Stock1" name="stock"></span></h5>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</section>
+
+	</section>
+
+
+	<section>
+		<section id="sando" class="main">
+			<h2>SANDO</h2>
+
+
+			<div class="box-container">
+				<div class="box">
+					<div class="image"><img src="sando1.jpg"></div>
+					<div class="details">
+						<div class="sub-details">
+							<h5>Brown Tank Top </h5>
+							<h5>Stock:<span id="sando1Stock" value="10"> 10</span></h5>
+							<button id="bt1" onclick="addStock('sando1Stock1')">Add Stock:</button><span><input
+									style="width:70px;" type="input" id="sando1Stock1" name="stock"></span></h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="image"><img src="sando2.jpg"></div>
+					<div class="details">
+						<div class="sub-details">
+							<h5>Beige Tank Top </h5>
+
+
+							<h5>Stock:<span id="sando2Stock" value="10"> 10</span></h5>
+							<button id="bt1" onclick="addStock('sando2Stock1')">Add Stock:</button><span><input
+									style="width:70px;" type="input" id="sando2Stock1" name="stock"></span></h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="image"><img src="sando3.jpg"></div>
+					<div class="details">
+						<div class="sub-details">
+							<h5>Gray Tank Top </h5>
+
+							<h5>Stock:<span id="sando3Stock" value="10"> 10</span></h5>
+							<button id="bt1" onclick="addStock('sando3Stock1')">Add Stock:</button><span><input
+									style="width:70px;" type="input" id="sando3Stock1" name="stock"></span></h5>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="box">
+					<div class="image"><img src="sando4.jpg"></div>
+					<div class="details">
+						<div class="sub-details">
+							<h5>Black Tank Top </h5>
+
+							<h5>Stock:<span id="sando4Stock" value="10"> 10</span></h5>
+							<button id="bt1" onclick="addStock('sando4Stock1')">Add Stock:</button><span><input
+									style="width:70px;" type="input" id="sando4Stock1" name="stock"></span></h5>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</section>
+
+	</section>
+
+
+	<section>
+		<section id="toys" class="main">
+			<h2>TOYS</h2>
+
+
+			<div class="box-container">
+				<div class="box">
+					<div class="image"><img src="toy1.jpg"></div>
+					<div class="details">
+						<div class="sub-details">
+							<h5>Vanity Mirror </h5>
+
+
+							<h5>Stock:<span id="toy1Stock" value="10"> 10</span></h5>
+							<button id="bt1" onclick="addStock('toy1Stock1')">Add Stock:</button><span><input
+									style="width:70px;" type="input" id="toy1Stock1" name="stock"></span></h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="image"><img src="toy2.jpg"></div>
+					<div class="details">
+						<div class="sub-details">
+							<h5>Mercedes Toy Car</h5>
+
+							<h5>Stock:<span id="toy2Stock" value="10"> 10</span></h5>
+							<button id="bt1" onclick="addStock('toy2Stock1')">Add Stock:</button><span><input
+									style="width:70px;" type="input" id="toy2Stock1" name="stock"></span></h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="image"><img src="toy3.jpg"></div>
+					<div class="details">
+						<div class="sub-details">
+							<h5>Mickey Mouse Drum Set </h5>
+
+							<h5>Stock:<span id="toy3Stock" value="10"> 10</span></h5>
+							<button id="bt1" onclick="addStock('toy3Stock1')">Add Stock:</button><span><input
+									style="width:70px;" type="input" id="toy3Stock1" name="stock"></span></h5>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="box">
+					<div class="image"><img src="toy4.jpg"></div>
+					<div class="details">
+						<div class="sub-details">
+							<h5>Popit Unicorn </h5>
+
+							<h5>Stock:<span id="toy4Stock" value="10"> 10</span></h5>
+							<button id="bt1" onclick="addStock('toy4Stock1')">Add Stock:</button><span><input
+									style="width:70px;" type="input" id="toy4Stock1" name="stock"></span></h5>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</section>
+
+	</section>
+
+	<script>
+
+		var storedBlackStock = localStorage.getItem('blackStock1');
+		var storedBlackStockCurrent = document.getElementById('blackStock').value
+
+		if (storedBlackStock !== null) {
+			document.getElementById('blackStock').textContent = parseInt(storedBlackStock);
+		}
+
+
+		var storedBlackStock = localStorage.getItem('sweatpantsStock1');
+		var storedBlackStockCurrent = document.getElementById('sweatpantsStock').value
+
+		if (storedBlackStock !== null) {
+			document.getElementById('sweatpantsStock').textContent = parseInt(storedBlackStock);
+		}
+
+		var storedBlackStock = localStorage.getItem('cargoStock1');
+		var storedBlackStockCurrent = document.getElementById('cargoStock').value
+
+		if (storedBlackStock !== null) {
+			document.getElementById('cargoStock').textContent = parseInt(storedBlackStock);
+		}
+
+		var storedBlackStock = localStorage.getItem('trouserStock1');
+		var storedBlackStockCurrent = document.getElementById('trouserStock').value
+
+		if (storedBlackStock !== null) {
+			document.getElementById('trouserStock').textContent = parseInt(storedBlackStock);
+		}
+
+
+		//shirt
+		var storedBlackStock = localStorage.getItem('tshirt1Stock1');
+		var storedBlackStockCurrent = document.getElementById('tshirt1Stock').value
+
+		if (storedBlackStock !== null) {
+			document.getElementById('tshirt1Stock').textContent = parseInt(storedBlackStock);
+		}
+
+
+		var storedBlackStock = localStorage.getItem('tshirt2Stock1');
+		var storedBlackStockCurrent = document.getElementById('tshirt2Stock').value
+
+		if (storedBlackStock !== null) {
+			document.getElementById('tshirt2Stock').textContent = parseInt(storedBlackStock);
+		}
+
+		var storedBlackStock = localStorage.getItem('tshirt3Stock1');
+		var storedBlackStockCurrent = document.getElementById('tshirt3Stock').value
+
+		if (storedBlackStock !== null) {
+			document.getElementById('tshirt3Stock').textContent = parseInt(storedBlackStock);
+		}
+
+		var storedBlackStock = localStorage.getItem('tshirt4Stock1');
+		var storedBlackStockCurrent = document.getElementById('tshirt4Stock').value
+
+		if (storedBlackStock !== null) {
+			document.getElementById('tshirt4Stock').textContent = parseInt(storedBlackStock);
+		}
+
+		//perfume
+
+		var storedBlackStock = localStorage.getItem('perfume1Stock1');
+		var storedBlackStockCurrent = document.getElementById('perfume1Stock').value
+
+		if (storedBlackStock !== null) {
+			document.getElementById('perfume1Stock').textContent = parseInt(storedBlackStock);
+		}
+
+
+		var storedBlackStock = localStorage.getItem('perfume2Stock1');
+		var storedBlackStockCurrent = document.getElementById('perfume2Stock').value
+
+		if (storedBlackStock !== null) {
+			document.getElementById('perfume2Stock').textContent = parseInt(storedBlackStock);
+		}
+
+		var storedBlackStock = localStorage.getItem('perfume3Stock1');
+		var storedBlackStockCurrent = document.getElementById('perfume3Stock').value
+
+		if (storedBlackStock !== null) {
+			document.getElementById('perfume3Stock').textContent = parseInt(storedBlackStock);
+		}
+
+		var storedBlackStock = localStorage.getItem('perfume4Stock1');
+		var storedBlackStockCurrent = document.getElementById('perfume4Stock').value
+
+		if (storedBlackStock !== null) {
+			document.getElementById('perfume4Stock').textContent = parseInt(storedBlackStock);
+		}
+
+		//sando
+		var storedBlackStock = localStorage.getItem('sando1Stock1');
+		var storedBlackStockCurrent = document.getElementById('sando1Stock').value
+
+		if (storedBlackStock !== null) {
+			document.getElementById('sando1Stock').textContent = parseInt(storedBlackStock);
+		}
+
+
+		var storedBlackStock = localStorage.getItem('sando2Stock1');
+		var storedBlackStockCurrent = document.getElementById('sando2Stock').value
+
+		if (storedBlackStock !== null) {
+			document.getElementById('sando2Stock').textContent = parseInt(storedBlackStock);
+		}
+
+		var storedBlackStock = localStorage.getItem('sando3Stock1');
+		var storedBlackStockCurrent = document.getElementById('sando3Stock').value
+
+		if (storedBlackStock !== null) {
+			document.getElementById('sando3Stock').textContent = parseInt(storedBlackStock);
+		}
+
+		var storedBlackStock = localStorage.getItem('sando4Stock1');
+		var storedBlackStockCurrent = document.getElementById('sando4Stock').value
+
+		if (storedBlackStock !== null) {
+			document.getElementById('sando4Stock').textContent = parseInt(storedBlackStock);
+		}
+		//toys
+		var storedBlackStock = localStorage.getItem('toy1Stock1');
+		var storedBlackStockCurrent = document.getElementById('toy1Stock').value
+
+		if (storedBlackStock !== null) {
+			document.getElementById('toy1Stock').textContent = parseInt(storedBlackStock);
+		}
+
+		var storedBlackStock = localStorage.getItem('toy2Stock1');
+		var storedBlackStockCurrent = document.getElementById('toy2Stock').value
+
+		if (storedBlackStock !== null) {
+			document.getElementById('toy2Stock').textContent = parseInt(storedBlackStock);
+		}
+
+		var storedBlackStock = localStorage.getItem('toy3Stock1');
+		var storedBlackStockCurrent = document.getElementById('toy3Stock').value
+
+		if (storedBlackStock !== null) {
+			document.getElementById('toy3Stock').textContent = parseInt(storedBlackStock);
+		}
+
+		var storedBlackStock = localStorage.getItem('toy4Stock1');
+		var storedBlackStockCurrent = document.getElementById('toy4Stock').value
+
+		if (storedBlackStock !== null) {
+			document.getElementById('toy4Stock').textContent = parseInt(storedBlackStock);
+		}
+
+		function addStock(id) {
+
+			var stock = document.getElementById(id).value;
+			localStorage.setItem(id, stock);
+		}
+
+	</script>
+
+</body>
+
+</head>
+
+</html>

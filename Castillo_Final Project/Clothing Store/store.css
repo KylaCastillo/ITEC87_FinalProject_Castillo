@@ -1,0 +1,310 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #d4cdcd;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 10px 20px;
+	text-align: center;
+
+}
+
+nav {
+	background-color: #555;
+	color: #fff;
+	padding: 10px;
+	width: 1000px auto;
+	text-align: left;
+
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	margin: 0 10px;
+
+	font-family: 'Times New Roman', serif;
+	font-size: 25px;
+	margin-left: 10px;
+}
+
+a:hover {
+	background-color: white;
+	color: black;
+	transition: 0.3s;
+	border-radius: 5px;
+}
+
+section {
+	padding: 20px;
+
+}
+
+.main {
+	display: block;
+	padding: 20px;
+	margin-top: 10px;
+	height: 700px;
+	overflow: auto;
+	box-shadow: 5px 5px 5px 5px #68636388;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+
+}
+
+.main .box-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+	gap: 1.5rem;
+	transition: .2s ease-in-out;
+}
+
+.main .box-container .box {
+	background-color: white;
+	box-shadow: 5px 5px 5px 5px #15151588;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 2px;
+}
+
+.main .box-container .box .image {
+	height: 100%;
+	overflow: hidden;
+	width: 100%;
+}
+
+.main .box-container .box .image img {
+	object-fit: cover;
+	width: 300px;
+	height: 100 px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.main .box-container .box .content {
+	padding: 3rem;
+}
+
+.textbox {
+	width: 50px;
+
+}
+
+.box-container .box {
+	height: 400px;
+	width: auto
+}
+
+.image img {
+	width: 100%;
+	height: 100%;
+}
+
+.image img:hover {
+	transform: scale(1.1);
+}
+
+nav button {
+	float: right;
+
+	color: #0a0a0a;
+	margin: 0 20px;
+	font-family: 'Times New Roman', serif;
+	font-size: 25px;
+	border-radius: 10px;
+	;
+}
+
+nav button a {
+	float: right;
+
+	color: #0a0a0a;
+	margin: 0 10px;
+	font-family: 'Times New Roman', serif;
+	font-size: 25px;
+	border-radius: 10px;
+	;
+}
+
+button a:hover {
+	background-color: rgb(210, 200, 200);
+	color: rgb(242, 242, 242);
+	transition: 0.3s;
+}
+
+button:hover {
+	background-color: rgb(210, 200, 200);
+	color: rgb(242, 242, 242);
+	transition: 0.3s;
+}
+
+button img {
+	width: 30px;
+	height: 20px;
+}
+
+.add img {
+	width: 30px;
+	height: 20px;
+}
+
+.details {
+	padding: 1px 1px;
+	display: grid;
+	grid-template-rows: auto 1fr 1 px;
+	grid-row-gap: 1px;
+	align-items: center;
+}
+
+.price {
+	text-align: center;
+}
+
+.details h5 {
+	font-weight: 600;
+	font-size: 15px;
+	text-align: center;
+	font-family: "Georgia", serif;
+}
+
+.sub-details {
+	display: grid;
+	grid-template-columns: auto auto;
+	text-align: center;
+
+}
+
+.sub-details button {
+	background-color: rgb(136, 166, 166);
+	border-radius: 3px;
+
+}
+
+#addBtn {
+	width: 30px;
+	margin-left: 140px;
+	margin-top: -20px;
+	margin-bottom: 15px;
+}
+
+#subBtn {
+	width: 30px;
+	margin-top: -20px;
+	margin-bottom: 15px;
+}
+
+.add {
+	width: unset;
+	margin-left: -150px;
+
+	vertical-align: middle;
+}
+
+.message-box {
+	position: fixed;
+	bottom: 50%px;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 20px;
+	width: 500px;
+	background-color: #f8f8f8;
+	border: 1px solid #383333;
+	border-radius: 10px;
+	box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
+	display: none;
+	text-align: center;
+	color: #0a0a0a;
+}
+
+#closeButton {
+	margin-left: 10px;
+	margin-top: 40px;
+	font-size: 20px;
+	padding: 7px;
+
+}
+
+#cancelButton {
+	margin-top: 42px;
+	font-size: 20px;
+	padding: 7px;
+
+}
+
+
+footer {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 2px 5px;
+	width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+	nav {
+		text-align: center;
+		height: 250px;
+	}
+
+	nav a {
+		display: block;
+		margin: 10px 0;
+	}
+
+	nav button {
+
+		margin-top: 10px;
+		grid-column: 1;
+		grid-row: 2;
+		text-align: center;
+	}
+
+	.main .box-container {
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	}
+
+	.main .box {
+		width: 100%;
+	}
+
+	.box {
+		display: grid;
+
+	}
+
+	.details {
+		grid-column: 1;
+		grid-row: 2;
+		text-align: center;
+	}
+
+	.sub-details {
+		display: grid;
+		text-align: center;
+	}
+
+	.main .box-container .box .image img {
+		object-fit: cover;
+		width: 50%;
+		height: auto;
+		max-height: 300px;
+	}
+
+	.message-box {
+		padding: 20px;
+		width: 60%;
+		background-color: #f8f8f8;
+		border: 1px solid #383333;
+		border-radius: 10px;
+		box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
+		margin-top: -230px;
+		text-align: center;
+		color: #0a0a0a;
+	}
+}

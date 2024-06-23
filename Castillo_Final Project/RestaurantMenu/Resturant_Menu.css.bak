@@ -1,0 +1,264 @@
+body{
+	
+	background-image: url(background.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+	
+	
+
+}
+.container3{
+
+	background: rgba(76,120,126, 0.2);
+	width: 1240px;
+	margin: 60px auto;
+	height: 650px;
+	box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+	z-index:-1;
+	position:relative;
+	justify-content:center;
+
+}
+
+.container2{
+	display: block;
+	background: rgba(76,120,126, 0.5);
+	width: 1200px;
+	margin: 60px auto;
+	height: 1250px auto;
+	padding: 20px;
+	box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+	overflow: auto;
+	margin-bottom:-10px;
+	
+}
+
+.main {
+	display: block;
+	padding: 20px;
+	border: 9px solid #ddd;
+	margin-top: 10px;
+	height: 700px; 
+    overflow: auto; 
+	background-color: #FFFFFF;
+		
+
+}
+
+.tab-content:target {
+  background-color: #EBF4FA;
+  
+}
+
+.tab-nav{
+	background-color: #29465B;
+	width: 760px auto;
+	padding: 20px;
+	overflow: hidden;
+	display: flex;
+	position: fixed;
+	top:0; left:0; right:0; 
+
+	
+	
+	}
+.tab-link {
+	text-decoration: none;
+	align-items:center;
+}
+
+.tabs{
+	display: flex; 
+	
+
+}
+
+.logo a{
+	font-size: 45px; 
+	font-weight: 600; 
+	color: white;
+	text-decoration: none;
+	margin-right:10px;
+	margin-left:10px;
+	
+	font-family: "Georgia", Times, serif;
+		}
+		
+.logo img{
+	float:left;
+	width: 60px;
+	height:60px;
+	border:white;
+	margin-top:-2px;
+	margin-left:1px;
+}
+		
+button{
+	background-color: white; 
+	border-radius: 10px; 
+	padding: 15px 15px;
+	width: 80px auto;
+	justify-content:rigth;
+	margin: 0px -50px 0px 70px;
+	
+	}
+button a{
+	color: black; 
+	font-weight: bold; 
+	font-size: 15px;
+	font-family:"Garamond", Times, serif;
+	margin:10px;
+	
+	}
+button:hover{
+  background-color: #ddd;
+}
+
+h2{
+	margin-top:80px;
+	text-align:center;
+	font-family: "Georgia", Times, serif;
+	font-size: 50px;
+	font-style: bold;
+}
+
+
+td{
+	font-size: 30px;
+	font-family:"Garamond", Times, serif;
+	font-weight:900;
+}
+
+h1{
+	
+	text-align:right;
+	padding:180px;
+	margin-left:100px;
+	margin-right:-50px;
+	font-family:Cookie;
+	font-size: 100px;
+	font-style:bold;
+	font-style:italic;
+	color:white;
+	
+}
+p{
+	margin-top:-250px;
+	margin-left:300px;
+	text-align:center;
+	padding:10px;
+	font-family:Cookie;
+	font-size: 40px;
+	font-style:bold;
+	color:white;
+}
+.list{
+	background: #FFFFFF;
+	padding:2px;
+	text-align:center;
+	width: 500px;
+	margin: 60px auto;
+	font-family:Cookie;
+	font-size: 50px;
+	font-style:bold;
+	border: 10px solid #ddd;
+	border-radius: 20%;
+	
+}
+
+.main .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 1.5rem;
+	transition: .2s ease-in-out;
+}
+
+.main .box-container .box{
+    background-color: white;
+    box-shadow: 5px 11px 10px 10px #15151588;
+    border-radius: 5px;
+	
+	
+
+}
+
+.main .box-container .box .image{
+    height: 15rem;
+    overflow:hidden;
+    width: 100%;
+
+}
+
+.main .box-container .box .image img{
+    object-fit: cover;
+	width: 200px;
+	height: 100 px;
+	margin-top: 10px;
+	border: 5px solid #555;
+	border-radius: 20%;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+#drinks img{
+	height:90%;
+	
+}
+#drinks .details h5{
+	margin-top:-1px;
+}
+
+#main img{
+	width:90%
+}
+.main .box-container .box:hover{
+    transform: scale(1.2);
+}
+
+.main .box-container .box .content{
+    padding: 2rem;
+}
+	
+.textbox{
+	width: 50px;
+	
+}
+
+.box-container .box{
+height: 350px;
+width:auto
+}
+
+.details{
+	padding: 20px 10px;
+	display:grid;
+	grid-template-rows: auto 1fr 20 px;
+	grid-row-gap:15px;
+	align-items:center;
+}
+.price{
+	text-align: center;
+}
+.details h5{
+	font-weight: 600;
+	font-size: 18px;
+	margin-top: -40px;
+	text-align: center;
+}
+.sub-details{
+	display:grid;
+	grid-template-columns: auto auto;
+}
+
+ input[type=checkbox] { 
+            vertical-align: middle; 
+            position: relative; 
+            bottom: 1px; 
+        } 
+          
+        label { 
+            display: block; 
+        } 
+ 
